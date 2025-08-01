@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "ShrinkMe Catcher",
+  "version": "1.0",
+  "description": "Перехватывает переходы на shrinkme.io/st и достаёт ссылку. (Creator HLNikNiky)",
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "webNavigation",
+    "storage",
+    "tabs"
+  ],
+  "host_permissions": [
+    "*://shrinkme.io/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "128.png"
+    }
+  }
+}
